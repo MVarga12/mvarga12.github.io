@@ -13,7 +13,7 @@ printf "Preparing library %s" $1
 tail -n +2 $1 > tmp
 
 # create new header in the jekyll style
-printf "%s\nlayout:none\nurl: /library.html\n%s\n" '---' '---' > header
+printf "%s\nlayout:none\nurl: /paper_library.html\n%s\n" '---' '---' > header
 
 # reinstert doctype line and url for the paper library
 printf "<!DOCTYPE HTML>\n" >> header

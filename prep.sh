@@ -17,7 +17,7 @@ printf "%s\nlayout:none\nurl: /library.html\n%s\n" '---' '---' > header
 
 # reinstert doctype line and url for the paper library
 printf "<!DOCTYPE HTML>\n" >> header
-printf "Click <a href=\"%s\">here</a> to go to documents." \
+printf "Click <a href=\"%s\">here</a> to go to documents.\nDocuments are sorted by year/bibtexkey.\n" \
     'https://drive.google.com/drive/folders/0B04bPEjpYXgPOENycDlySnQ2Y2M?usp=sharing'\
     >> header
 

@@ -4,7 +4,7 @@
 	<td>\year</td>
 	<td>\format[HTMLChars]{\journal}\begin{volume}<br/>Vol. \volume\end{volume}\begin{number}(\format[FormatPagesForHTML]{\number})\end{number}\format[HTMLChars]{\booktitle}\begin{pages}, pp. \format[FormatPagesForHTML]{\pages}\end{pages}\begin{school}<i>School</i>: \format[HTMLChars]{\school}\end{school}\begin{howpublished}\format[HTMLChars]{\howpublished}\end{howpublished}&nbsp;</td>
 	<td>\format[ToLowerCase]{\__markedentry}</td>
-	<td>\begin{doi}<a href="\format[DOICheck]{\doi}">DOI</a> \end{doi}\begin{url}<a href="\format{\url}">URL</a>\end{url}&nbsp;</td>
+	<td>\begin{file}File available\end{file}\begin{url}<a href="\format{\url}">URL</a>\end{url}&nbsp;</td>
 </tr>\begin{abstract}
 <tr id="abs_\format{\bibtexkey}" class="abstract noshow">
 	<td colspan="6"><b>Abstract</b>: \format[HTMLChars]{\abstract}</td>

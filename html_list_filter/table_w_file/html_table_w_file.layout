@@ -29,7 +29,8 @@
   edition = {\format[HTMLChars]{\edition}}\end{edition}\begin{note},
   note = {\format[HTMLChars]{\note}}\end{note}\begin{url},
   url = {\format[HTMLChars]{\url}}\end{url}\begin{doi},
-  doi = {\format[DOICheck]{\doi}}\end{doi}
+  doi = {\format[DOICheck]{\doi}}\end{doi}\begin{__markedentry},
+  __markedentry = {\format[HTMLChars]{\__markedentry}\end{__markedentry}
 }
 </pre></td>
 </tr>

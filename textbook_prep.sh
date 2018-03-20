@@ -13,14 +13,17 @@ printf "Preparing library %s" $1
 tail -n +2 $1 > tmp
 
 # create new header in the jekyll style
-printf "%s\nlayout:none\npermalink: /paper_library.html\n%s\n" '---' '---' > header
+printf "%s\nlayout:none\npermalink: /textbook_library.html\n%s\n" '---' '---' > header
 
 # reinstert doctype line and url for the paper library
 printf "<!DOCTYPE HTML>\n" >> header
-printf "Click <a href=\"%s\">here</a> to go to documents.\nDocuments are sorted by year/bibtexkey.\n" \
+printf "Click <a href=\"%s\">here</a> to go to documents.\nTextbooks are sorted by subject matter.\n" \
     'https://drive.google.com/drive/folders/0B04bPEjpYXgPOENycDlySnQ2Y2M?usp=sharing'\
     >> header
 
 # concatenate with the library and clean up
-cat header tmp > paper_library.html
+cat header tmp > textbook_library.html
 rm tmp $1 header  
+
+# write file directory to @comment from @file
+./file2comment.py textbook_library.html textbook_library.html

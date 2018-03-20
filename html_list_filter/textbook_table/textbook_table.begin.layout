@@ -405,5 +405,5 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 </div>
 </form>
 <table id="qs_table" border="1">
-<thead><tr><th width="20%">Author(s)</th><th width="30%">Title</th><th width="5%">Year</th><th width="30%">Journal/Proceedings</th><th width="10%">Priority</th><th width="5%">File available?</th></tr></thead>
+<thead><tr><th width="25%">Author(s)/Editor(s)</th><th width="40%">Title</th><th width="5%">Year</th><th width="15%">File Directory</th><th width="5%">File available?</th></tr></thead>
 <tbody>

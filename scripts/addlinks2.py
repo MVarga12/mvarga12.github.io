@@ -34,7 +34,7 @@ else:
             elem[3][len(elem[3])-1]=elem[3][len(elem[3])-1][:-2]
             link.append("<a href=\"#" + elem[0] + "\">" + elem[0] + ", " + " ".join(elem[3]) + ')' + elem[2] + ',')
         else:
-            link.append('(' + "<a href=\"" + new_files[i][0] + "\">" + new_files[i][0] + ", " + " ".join(new_files[i][3]) + ')' + new_files[i][2])
+            link.append('(' + "<a href=\"#" + new_files[i][0] + "\">" + new_files[i][0] + ", " + " ".join(new_files[i][3]) + ')' + new_files[i][2])
 
 link.append("</font>")
 lines.insert(7, link)

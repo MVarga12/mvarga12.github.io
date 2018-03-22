@@ -25,8 +25,7 @@ printf "<font size="3", color=#7742f4> Click <a href=\"%s\">here</a> to go to do
 cat header tmp > tmp2
 
 scripts/./file2comment.py tmp2 tmp3
-diff --ignore-space-change --changed-group-format='%<' --unchanged-group-format='' --ignore-case --speed-large-files tmp3 paper_library.html > diffs
-scripts/./newfiles.py diffs diffs2
-scripts/./addlinks.py tmp3 diffs2 paper_library.html
+scripts/./newfiles.py paper_library.html tmp3 diffs
+scripts/./addlinks.py tmp3 diffs paper_library.html
 
-rm tmp tmp2 tmp3 $1 header diffs diffs2
+#rm tmp tmp2 tmp3 $1 header diffs

@@ -36,7 +36,7 @@ else:
         if i != (len(new_files) - 1):
             link.append('(' + "<a href=\"#" + new_files[i][0] + "\">" + new_files[i][0] + ", " + " ".join(new_files[i][3]) + ')' + new_files[i][2] + ',')
         else:
-            link.append('(' + "<a href=\"" + new_files[i][0] + "\">" + new_files[i][0] + ", " + " ".join(new_files[i][3]) + ')' + new_files[i][2])
+            link.append('(' + "<a href=\"#" + new_files[i][0] + "\">" + new_files[i][0] + ", " + " ".join(new_files[i][3]) + ')' + new_files[i][2])
 
 link.append("</font>")
 

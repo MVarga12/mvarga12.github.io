@@ -22,8 +22,11 @@ printf "<font size="3", color=#7742f4> Click <a href=\"%s\">here</a> to go to do
     >> header
 
 # concatenate with the library and clean up
-cat header tmp > textbook_library.html
-rm tmp $1 header  
+cat header tmp > tmp2 #textbook_library.html
 
-# write file directory to @comment from @file
-./file2comment.py textbook_library.html textbook_library.html
+scripts/./file2comment.py tmp2 tmp3
+diff --ignore-space-change --changed-group-format='%<' --unchanged-group-format='' --ignore-case --speed-large-files tmp3 paper_library.html > diffs
+scripts/./newfiles.py diffs diffs2
+scripts/./addlinks2.py tmp3 diffs2 textbook_library.html
+
+rm tmp tmp2 tmp3 $1 header diffs diffs2

@@ -5,7 +5,6 @@ import sys
 filename = sys.argv[1] #html file for processing
 lines = [line.split() for line in open(filename, "r")]
 
-
 saved_lines = []
 for i in range(0, len(lines)):
     if len(lines[i]) >= 1:

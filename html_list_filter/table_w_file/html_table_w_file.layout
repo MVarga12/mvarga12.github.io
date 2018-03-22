@@ -19,7 +19,7 @@
   author = {\format[HTMLChars]{\author}}\end{author}\begin{title},
   title = {\format[HTMLChars]{\title}}\end{title}\begin{booktitle},
   booktitle = {\format[HTMLChars]{\booktitle}}\end{booktitle}\begin{journal},
-  journal = {\format[HTMLChars]{\journal}}\end{journal}\begin{publisher},
+  journal = {\format[HTMLChars,JournalAbbreviator]{\journal}}\end{journal}\begin{publisher},
   publisher = {\format[HTMLChars]{\publisher}}\end{publisher}\begin{school},
   school = {\format[HTMLChars]{\school}}\end{school}\begin{year},
   year = {\format[HTMLChars]{\year}}\end{year}\begin{volume},

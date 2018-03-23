@@ -28,4 +28,4 @@ scripts/./file2comment.py tmp2 tmp3
 scripts/./newfiles.py paper_library.html tmp3 diffs
 scripts/./addlinks.py tmp3 diffs paper_library.html
 
-#rm tmp tmp2 tmp3 $1 header diffs
+rm tmp tmp2 tmp3 $1 header diffs
